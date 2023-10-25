@@ -1,0 +1,354 @@
+home.html
+<!DOCTYPE html>
+<html> 
+<head>
+ <title>Welcome to SREC Book Store</title>
+ <link rel="icon" type="image/x-icon" href="G:\favicon.ico">
+</head>
+<frameset rows="40%,*">
+<frame src="top.html" noresize scrolling="NO" name="topframe">
+<frameset cols="15%,*">
+<frame src="left.html" noresize scrolling="NO" name="leftframe">
+<frame src="right.html" noresize name="rightframe" scrolling="auto">
+</frameset>
+</frameset>
+<html>
+top.html
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Top Frame</title> 
+</head> 
+<body bgcolor="Yellowgreen "> 
+<img src="C:\Users\TM.DESKTOP-U744J3V\Desktop\TM WAD\logo.jpg" width="10%" 
+height="15%" align="left">
+<center>
+<h2>WEB APPLICATION DEVELOPMENT - SREC DEPARTMENT OF CSE</h2>
+</center>
+<center>
+<marquee bgcolor="yellow" width="25%">
+<font face="Segoe Print" size="10" color="blue">Online Book Store</font>
+</marquee>
+</center>
+<br>
+<center>
+<font face="BeyondControl" align="center" size="4" color="black">
+<b>Created & Maintained By SREC</b>
+</font> 
+</center>
+<table width="100%" height="20%" cellspacing="30">
+<tr>
+<td>
+<a href="home.html" target="_parent">
+<font face="Times New Roman" size="8" color="blue"/>Home</a>
+</td> 
+<td>
+<a href="login.html" target="rightframe">
+<font face="Times New Roman" size="8" color="blue"/>Login</a> </td>
+<td>
+<a href="registration.html" target="rightframe">
+<font face="Times New Roman" size="8" color="blue"/>Registration</a> </td>
+<td>
+<a href="catalogue.html" target="rightframe">
+<font face="Times New Roman" size="8" color="blue"/>Catalogue</a>
+</td>
+</tr>
+</body> 
+</html>
+left.html
+<!DOCTYPE html>
+<html> 
+<body align="center" bgcolor="97F7DA"> <br> 
+<a href="cse.html" target="rightframe">
+<font size="6" color="red">CSE</font></a><br><br>
+<a href="ece.html" target="rightframe">
+<font size="6" color="red">ECE</font></a><br><br> 
+<a href="eee.html" target="rightframe">
+<font size="6" color="red">EEE</font></a><br><br> 
+<a href="mech.html" target="rightframe">
+<font size="6" color="red">MECH</font></a><br> 
+</body> 
+</html>
+right.html
+<!DOCTYPE html>
+<html> 
+<body bgcolor="2DEA47"> 
+<center> 
+<img src="C:\Users\TM.DESKTOP-U744J3V\Desktop\TM WAD\logo.jpg" height="30%"><br> 
+<font face="Brush Script MT" size="5" color="blue"> 
+<h1><b>Welcome to the Online Book Store!!!</b></h1>
+</font><br>> 
+<font face="Brush Script MT" size="5" color="red"> 
+<h2><b> "A Huge Collection Of Engineering E-Books"</b></h2></font> 
+</center> 
+</body> 
+</html>
+login.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>login form</title>
+</head>
+<body bgcolor="cyan">
+<center>
+<font color="blue"><h1>STUDENTS LOGIN</h1></font>
+</center><br>
+<table align="center">
+<tr>
+<td>Student Reg Number</td>
+<td><input type="text" value=" "></td>
+</tr>
+<tr>
+<td>password</td>
+<td><input type="password" id="q"></td>
+</tr>
+<tr>
+<td></td>
+<td> <form method=post action="loginorder.html">
+<input type="submit" value="login" action="loginorder.html" />
+<input type="button" value="cancel" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+loginorder.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>order conformation</title>
+</head>
+<body bgcolor="cyan">
+<center>
+<strong>Login Successfully</strong>
+</center>
+</body>
+</html>
+registration.html
+<!DOCTYPE html>
+<html>
+<body bgcolor="D4F599">
+<center>
+<h2>SANTHIRAM ENGINEERING COLLEGE</H2>
+<h5>(Affiliated to JNTU Anantapuram)</h5>
+<strong><u>REGISTRATION FORM</u></strong>
+</center>
+<table align="center">
+<tr>
+<form>
+<strong>
+<td><label>Name:</lable></td>
+<td><input type="text" name="fname" size="15"/></td>
+</tr>
+<tr>
+<td>Courses:</td>
+<td>
+<select>
+<option value="Select">Select Branch</option>
+<option value="cse">CSE</option>
+<option value="cse-ds">CSE-DS</option>
+<option value="ece">ECE</option>
+<option value="eee">EEE</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" name="gender"/>Male
+<input type="radio" name="gender"/>Female
+<input type="radio" name="gender"/>Others
+</td>
+</tr>
+<tr>
+<td>Photo:</td>
+<td><input type="file" name="photo"></td>
+</tr>
+<tr>
+<td>Marks Memo:</td>
+<td><input type="file" name="maksmemo"> </td>
+</tr>
+<tr>
+<td>Favorite Sports:<br></td>
+<td>
+<input type="checkbox" name="sport1"/>Chess<br>
+<input type="checkbox" name="sport2"/>Cricket<br>
+<input type="checkbox" name="sport3"/>Tennis<br>
+<input type="checkbox" name="sport4"/>Football
+</td>
+</tr>
+<tr> <td>Phone Number:</td>
+<td>
+<input type="text" name="country code" size="2" value="+91"/>
+<input type="text" name="phno" size="10">
+</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td><textarea cols="50" rows="5" value="address"></textarea></td>
+</tr>
+<tr>
+<td>Gmail:</td>
+<td><input type="gmail" name="gmail" size="15"/></td>
+</tr>
+<tr> <td>Password:</td>
+<td><input type="password" name="password" size="15"/></td>
+</tr>
+<tr>
+<td> </td>
+<td><input type="button" value="submit">
+<input type="button" value="reset"></td>
+</tr>
+</strong>
+</form>
+</table>
+</body>
+</html>
+catalogue.html
+<!DOCTYPE html>
+<html>
+<body>
+<a href="https://www.mlsu.ac.in/econtents/16_EBOOK7th_ed_software_engineering_a_practitioners_approach_by_roger_s._pressman_.pdf">
+<img src="C:\Users\TM.DESKTOP-U744J3V\Desktop\TM WAD\TASK6\book1.png" 
+alt="book1" style="width:150px;height:200px;">
+</a>&nbsp
+<a href=" 
+https://www.google.co.in/books/edition/Lecture_Notes_Database_Management_System/YJGF
+EAAAQBAJ?hl=en&gbpv=1&dq=dbms+textbook+pdf&printsec=frontcover">
+<img src="C:\Users\TM.DESKTOP-U744J3V\Desktop\TM WAD\TASK6\book2.jfif" 
+alt="book2" style="width:170px;height:215px;"></a>&nbsp
+<a 
+href="https://www.cs.cmu.edu/afs/cs.cmu.edu/user/gchen/www/download/java/LearnJava.
+pdf">
+<img src="C:\Users\TM.DESKTOP-U744J3V\Desktop\TM WAD\TASK6\book3.jpg" 
+alt="book3" style="width:150px;height:200px;"></a>&nbsp
+<a href="https://www.dcpehvpm.org/E-Content/BCA/BCA-II/Web%20Technology/thecomplete-reference-html-css-fifth-edition.pdf">
+<img src="C:\Users\TM.DESKTOP-U744J3V\Desktop\TM WAD\TASK6\book4.png" 
+alt="book4" style="width:150px;height:200px;"></a>&nbsp
+</html>
+cse.html
+<!DOCTYPE html>
+<html> 
+<head>
+<title>CSE</title>
+</head> 
+<body bgcolor="cyan"> 
+<center>
+<font color="blue"><h1>Computer Science and Engineering</h1></font>
+</center> <br> 
+<table align="center"> 
+<tr> 
+<td>Text Books</td> 
+<td> 
+<select > 
+<option value="select the book" selected>Select the book 
+<option value="C&Ds">C&Ds 
+<option value="Ads">Ads 
+<option value="Java">Java 
+<option value="Oracle">Oracle 
+<option value="Ms SQL Server">Ms SQL Server 
+<option value="MySql">MySql 
+</select> 
+</td>
+</tr> 
+<tr> 
+<td>Quantity</td> 
+<td><input type="text" id="q"></td> 
+</tr>
+<tr> 
+<td></td> 
+<td> 
+<form method=post action="order.html"> 
+<input type="submit" value=ok /> 
+</form> 
+</td> 
+</tr> 
+</table> 
+<center> 
+<pre> Cost of one book is"500" + shipping "100" </pre> 
+</center> 
+</body> 
+</html>
+ece.html
+<!DOCTYPE html>
+<html> 
+<head>
+<title>CSE</title></head> 
+<body bgcolor="cyan"> 
+<center>
+<font color="blue"><h1>Electronics and Communication Engineering</h1></font>
+</center> <br> 
+<table align="center"> 
+<tr> 
+<td>Text Books</td> 
+<td> 
+<select > 
+<option value="select the book" selected>Select the book 
+<option value="MPI">MPI 
+<option value="DLD">DLD 
+<option value="VLSI">VLSI 
+<option value="Embeded Systems">Embeded Systems 
+<option value="Ms SQL Server">Ms SQL Server 
+<option value="MySql">MySql 
+</select> 
+</td>
+</tr> 
+<tr> 
+<td>Quantity</td> 
+<td><input type="text" id="q"></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td> 
+<form method=post action="order.html"> 
+<input type="submit" value=ok /> 
+</form> 
+</td> 
+</tr> 
+</table> 
+<center> 
+<pre> Cost of one book is"500" + shipping "100" </pre> 
+</center> 
+</body> 
+</html>
+order.html
+<!DOCTYPE html>
+<html> 
+<head>
+<title>order conformation</title>
+</head> 
+<body bgcolor="cyan"> 
+<center> 
+<pre><strong>Your order Is Conformed </strong></pre> 
+<h2><b>THANK YOU...Visit Again</h2> 
+</center> 
+</body> 
+</html>
+Eee.html
+<!DOCTYPE html><html> 
+<body bgcolor="Plum"> 
+<h1><font color="blue">Electrical and Electronics Engineering</font></h1>
+<h2> 
+<ul type="square"> 
+<li>Concepts in Electric Circuits</li> 
+<li>Introduction to Electronic Engineering</li> 
+<li>Electrical Power</li> 
+</ul> 
+</h2> 
+</body> 
+</html>
+mech.html
+<!DOCTYPE html>
+<html> 
+<body bgcolor="Plum"> 
+<h1><font color="blue">Mechanical Engineering</font></h1> 
+<h2> 
+<ol type="I"> 
+<li>Theory of Machines</li> 
+<li>Automation and Robotics</li> 
+<li>Engineering Fluid Mechanics</li> 
+</ol> 
+</h2> 
+</body> 
+</html>
